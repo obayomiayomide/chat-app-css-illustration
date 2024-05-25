@@ -1,0 +1,936 @@
+@media (min-width: 1201px) {
+    body {
+        margin: 0;
+        padding: 0;
+        min-width: 1440px;
+        font-family: "Rubik", sans-serif;
+    }
+    
+    .background-style {
+        width: 100%;
+        height: 800px;
+        position: absolute;
+        z-index: -1;
+        overflow: hidden;
+    }
+    
+    .vertical {
+        height: 43.75rem;
+        width: 32.5rem;
+    }
+    
+    .left {
+        background-color: black;
+        border-radius: 0 0 300px 300px;
+        float: left;
+        position: absolute;
+        margin-left: -100px;
+        background-image: linear-gradient(to top right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    }
+    
+    .right {
+        background-color: rgb(75, 11, 11);
+        border-radius: 300px 300px 0 0;
+        position: absolute;
+        float: right;
+        margin-top: 100px;
+        margin-left: 200px;
+        background-image: linear-gradient(to bottom right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+        opacity: 0.04;
+    }
+    
+    .hero {
+        clear: both;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        height: 800px;
+        margin-left: 5%;
+    }
+    
+    .app-ui {
+        background-color: white;
+        height: 480px;
+        width: 230px;
+        border-radius: 30px;
+        font-size: 8px;
+        padding: 10px;
+        margin: 100px;
+        box-shadow: 10px 10px 45px -20px hsl(270, 10%, 53%), 20px 20px 60px -40px hsl(206, 6%, 79%);
+    }
+    
+    .ui-contents {
+        background-color: hsl(270, 20%, 96%);
+        height: 480px;
+        width: 230px;
+        border-radius: 23px;
+    }
+    
+    .profile {
+        background-color: black;
+        height: 70px;
+        width: 230px;
+        border-radius: 23px 23px 6px 6px;
+        background-image: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+        box-shadow: 0 4px 8px -4px hsl(205, 6%, 62%);
+    }
+    
+    .island {
+        background-color: white;
+        height: 20px;
+        width: 130px;
+        margin-left: 50px;
+        border-radius: 0 0 14px 14px;
+    }
+    
+    .profile-contents {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        gap: 10px;
+        margin: 10px;
+    }
+    
+    .avatar {
+        border: 0.8px white solid;
+        border-radius: 20px;
+        margin-left: -5px;
+    }
+    
+    .profile-name {
+        line-height: 4px;
+        flex-basis: 120px;
+    }
+    
+    .profile-name h2 {
+        font-size: 11px;
+        font-weight: 500;
+        color: white;
+    }
+    
+    .profile-name p {
+        font-weight: 300;
+        color: hsl(276, 100%, 81%);
+    }
+    
+    .r-message {
+        background-color: hsl(275, 60%, 92%);
+        width: 110px;
+        padding: 7px 7.5px;
+        margin: 7.5px;
+        color: hsl(276, 55%, 52%);
+        border-radius: 10px 10px 10px 5px;
+        line-height: 12px;
+        clear: both;
+    }
+    
+    .dog-images {
+        margin-right: 3px;
+    }
+    
+    .s-image{
+        height: 40px;
+        border-radius: 8px;
+        margin: 0 4px;
+        float: right;
+    }
+    
+    .s-message {
+        background-color: white;
+        padding: 7.5px;
+        margin: 7.5px;
+        color: hsl(271, 15%, 43%);
+        border-radius: 10px 10px 5px 10px;
+        float: right;
+        box-shadow: 0 5px 8px -4px hsl(205, 6%, 62%);
+    }
+    
+    .one {
+        width: 110px;
+        margin-bottom: 0;
+    }
+    
+    .pricing-box {
+        background-image: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+        width: 150px;
+        padding: 3px 10px;
+        margin: 7.5px;
+        color: white;
+        border-radius: 10px 10px 10px 5px;
+        line-height: 12px;
+        clear: both;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: left;
+    }
+    
+    .radio {
+        height: 10px;
+        width: 10px;
+        border: 0.25px hsl(289, 100%, 72%) solid;
+        border-radius: 100%;
+    }
+    
+    .pricing-box p {
+        color: aliceblue;
+        flex-basis: 85px;
+        font-weight: 300;
+        line-height: 10px;
+    }
+    
+    .price {
+        font-size: 12px;
+        font-weight: 500;
+    }
+    
+    .chat-box {
+        background-color: white;
+        width: 210px;
+        height: 35px;
+        margin: 18px 10px 0 10px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        border-radius: 20px;
+    }
+    
+    .chat-box p {
+        margin-left: 15px;
+        flex-basis: 165px;
+        font-weight: 400;
+        font-size: 9px;
+        color: hsl(206, 6%, 79%);
+    }
+    
+    .text {
+        max-width: 450px;
+        min-width: 450px;
+    }
+    
+    .text h1 {
+        font-size: 40px;
+        font-weight: 600;
+        color: hsl(271, 36%, 24%);
+    }
+    
+    .text p {
+        color: hsl(206, 6%, 79%);
+    }
+    
+    .attribution { 
+        font-size: 11px; 
+        text-align: center; 
+        clear: both;
+    }
+    
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+    }
+}
+
+@media (min-width: 328px) and (max-width: 375px) {
+    body {
+        margin: 0;
+        padding: 0;
+        width: 375px;
+        font-family: "Rubik", sans-serif;
+    }
+    
+    .background-style {
+        width: 375px;
+        height: 1000px;
+        position: absolute;
+        z-index: -1;
+        overflow: hidden;
+    }
+    
+    .vertical {
+        height: 43.75rem;
+        width: 32.5rem;
+    }
+    
+    .left {
+        background-color: black;
+        border-radius: 0 0 300px 300px;
+        position: absolute;
+        float: left;
+        margin-top: -200px;
+        margin-left: -325px;
+        background-image: linear-gradient(to top right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    }
+    
+    .right {
+        background-color: rgb(75, 11, 11);
+        border-radius: 300px 300px 0 0;
+        position: absolute;
+        float: right;
+        margin-top: 400px;
+        margin-left: 200px;
+        background-image: linear-gradient(to bottom right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+        opacity: 0.04;
+    }
+    
+    .hero {
+        clear: both;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 345px;
+        height: 1000px;
+        margin-left: 15px;
+    }
+    
+    .app-ui {
+        background-color: white;
+        height: 480px;
+        width: 230px;
+        border-radius: 30px;
+        font-size: 8px;
+        padding: 10px;
+        margin-top: 100px;
+        box-shadow: 10px 10px 45px -20px hsl(270, 10%, 53%), 20px 20px 60px -40px hsl(206, 6%, 79%);
+    }
+    
+    .ui-contents {
+        background-color: hsl(270, 20%, 96%);
+        height: 480px;
+        width: 230px;
+        border-radius: 23px;
+    }
+    
+    .profile {
+        background-color: black;
+        height: 70px;
+        width: 230px;
+        border-radius: 23px 23px 6px 6px;
+        background-image: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+        box-shadow: 0 4px 8px -4px hsl(205, 6%, 62%);
+    }
+    
+    .island {
+        background-color: white;
+        height: 20px;
+        width: 130px;
+        margin-left: 50px;
+        border-radius: 0 0 14px 14px;
+    }
+    
+    .profile-contents {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        gap: 10px;
+        margin: 10px;
+    }
+    
+    .avatar {
+        border: 0.8px white solid;
+        border-radius: 20px;
+        margin-left: -5px;
+    }
+    
+    .profile-name {
+        line-height: 4px;
+        flex-basis: 120px;
+    }
+    
+    .profile-name h2 {
+        font-size: 11px;
+        font-weight: 500;
+        color: white;
+    }
+    
+    .profile-name p {
+        font-weight: 300;
+        color: hsl(276, 100%, 81%);
+    }
+    
+    .r-message {
+        background-color: hsl(275, 60%, 92%);
+        width: 110px;
+        padding: 7px 7.5px;
+        margin: 7.5px;
+        color: hsl(276, 55%, 52%);
+        border-radius: 10px 10px 10px 5px;
+        line-height: 12px;
+        clear: both;
+    }
+    
+    .dog-images {
+        margin-right: 3px;
+    }
+    
+    .s-image{
+        height: 40px;
+        border-radius: 8px;
+        margin: 0 4px;
+        float: right;
+    }
+    
+    .s-message {
+        background-color: white;
+        padding: 7.5px;
+        margin: 7.5px;
+        color: hsl(271, 15%, 43%);
+        border-radius: 10px 10px 5px 10px;
+        float: right;
+        box-shadow: 0 5px 8px -4px hsl(205, 6%, 62%);
+    }
+    
+    .one {
+        width: 110px;
+        margin-bottom: 0;
+    }
+    
+    .pricing-box {
+        background-image: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+        width: 150px;
+        padding: 3px 10px;
+        margin: 7.5px;
+        color: white;
+        border-radius: 10px 10px 10px 5px;
+        line-height: 12px;
+        clear: both;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: left;
+    }
+    
+    .radio {
+        height: 10px;
+        width: 10px;
+        border: 0.25px hsl(289, 100%, 72%) solid;
+        border-radius: 100%;
+    }
+    
+    .pricing-box p {
+        color: aliceblue;
+        flex-basis: 85px;
+        font-weight: 300;
+        line-height: 10px;
+    }
+    
+    .price {
+        font-size: 12px;
+        font-weight: 500;
+    }
+    
+    .chat-box {
+        background-color: white;
+        width: 210px;
+        height: 35px;
+        margin: 18px 10px 0 10px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        border-radius: 20px;
+    }
+    
+    .chat-box p {
+        margin-left: 15px;
+        flex-basis: 165px;
+        font-weight: 400;
+        font-size: 9px;
+        color: hsl(206, 6%, 79%);
+    }
+    
+    .text {
+        max-width: 85%;
+        min-width: 85%;
+        text-align: center;
+        padding: 0;
+        margin-top: 30px;
+    }
+    
+    .text h1 {
+        font-size: 36px;
+        font-weight: 600;
+        color: hsl(271, 36%, 24%);
+    }
+    
+    .text p {
+        color: hsl(206, 6%, 79%);
+        line-height: 30px;
+    }
+    
+    .attribution { 
+        font-size: 11px; 
+        text-align: center; 
+        clear: both;
+    }
+    
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+    }
+}
+
+@media (min-width: 376px) and (max-width: 900px) {
+    body {
+        margin: 0;
+        padding: 0;
+        max-width: 900px;
+        font-family: "Rubik", sans-serif;
+    }
+    
+    .background-style {
+        width: 100%;
+        height: 1000px;
+        position: absolute;
+        /* display: flex; */
+        z-index: -1;
+        overflow: hidden;
+    }
+    
+    .vertical {
+        height: 43.75rem;
+        width: 32.5rem;
+    }
+    
+    .left {
+        background-color: black;
+        border-radius: 0 0 300px 300px;
+        float: left;
+        margin-top: -200px;
+        margin-left: -350px;
+        background-image: linear-gradient(to top right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    }
+    
+    .right {
+        background-color: rgb(75, 11, 11);
+        border-radius: 300px 300px 0 0;
+        float: right;
+        margin-top: 400px;
+        margin-right: -325px;
+        background-image: linear-gradient(to bottom right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+        opacity: 0.04;
+    }
+    
+    .hero {
+        clear: both;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        height: 1000px;
+        margin-left: 5%;
+    }
+    
+    .app-ui {
+        background-color: white;
+        height: 480px;
+        width: 230px;
+        border-radius: 30px;
+        font-size: 8px;
+        padding: 10px;
+        margin-top: 100px;
+        box-shadow: 10px 10px 45px -20px hsl(270, 10%, 53%), 20px 20px 60px -40px hsl(206, 6%, 79%);
+    }
+    
+    .ui-contents {
+        background-color: hsl(270, 20%, 96%);
+        height: 480px;
+        width: 230px;
+        border-radius: 23px;
+    }
+    
+    .profile {
+        background-color: black;
+        height: 70px;
+        width: 230px;
+        border-radius: 23px 23px 6px 6px;
+        background-image: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+        box-shadow: 0 4px 8px -4px hsl(205, 6%, 62%);
+    }
+    
+    .island {
+        background-color: white;
+        height: 20px;
+        width: 130px;
+        margin-left: 50px;
+        border-radius: 0 0 14px 14px;
+    }
+    
+    .profile-contents {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        gap: 10px;
+        margin: 10px;
+    }
+    
+    .avatar {
+        border: 0.8px white solid;
+        border-radius: 20px;
+        margin-left: -5px;
+    }
+    
+    .profile-name {
+        line-height: 4px;
+        flex-basis: 120px;
+    }
+    
+    .profile-name h2 {
+        font-size: 11px;
+        font-weight: 500;
+        color: white;
+    }
+    
+    .profile-name p {
+        font-weight: 300;
+        color: hsl(276, 100%, 81%);
+    }
+    
+    .r-message {
+        background-color: hsl(275, 60%, 92%);
+        width: 110px;
+        padding: 7px 7.5px;
+        margin: 7.5px;
+        color: hsl(276, 55%, 52%);
+        border-radius: 10px 10px 10px 5px;
+        line-height: 12px;
+        clear: both;
+    }
+    
+    .dog-images {
+        margin-right: 3px;
+    }
+    
+    .s-image{
+        height: 40px;
+        border-radius: 8px;
+        margin: 0 4px;
+        float: right;
+    }
+    
+    .s-message {
+        background-color: white;
+        padding: 7.5px;
+        margin: 7.5px;
+        color: hsl(271, 15%, 43%);
+        border-radius: 10px 10px 5px 10px;
+        float: right;
+        box-shadow: 0 5px 8px -4px hsl(205, 6%, 62%);
+    }
+    
+    .one {
+        width: 110px;
+        margin-bottom: 0;
+    }
+    
+    .pricing-box {
+        background-image: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+        width: 150px;
+        padding: 3px 10px;
+        margin: 7.5px;
+        color: white;
+        border-radius: 10px 10px 10px 5px;
+        line-height: 12px;
+        clear: both;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: left;
+    }
+    
+    .radio {
+        height: 10px;
+        width: 10px;
+        border: 0.25px hsl(289, 100%, 72%) solid;
+        border-radius: 100%;
+    }
+    
+    .pricing-box p {
+        color: aliceblue;
+        flex-basis: 85px;
+        font-weight: 300;
+        line-height: 10px;
+    }
+    
+    .price {
+        font-size: 12px;
+        font-weight: 500;
+    }
+    
+    .chat-box {
+        background-color: white;
+        width: 210px;
+        height: 35px;
+        margin: 18px 10px 0 10px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        border-radius: 20px;
+    }
+    
+    .chat-box p {
+        margin-left: 15px;
+        flex-basis: 165px;
+        font-weight: 400;
+        font-size: 9px;
+        color: hsl(206, 6%, 79%);
+    }
+    
+    .text {
+        max-width: 85%;
+        min-width: 85%;
+        text-align: center;
+        padding: 0;
+        margin-top: 30px;
+    }
+    
+    .text h1 {
+        font-size: 36px;
+        font-weight: 600;
+        color: hsl(271, 36%, 24%);
+    }
+    
+    .text p {
+        color: hsl(206, 6%, 79%);
+        line-height: 30px;
+    }
+    
+    .attribution { 
+        font-size: 11px; 
+        text-align: center; 
+        clear: both;
+    }
+    
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1200px) {
+    body {
+        margin: 0;
+        padding: 0;
+        max-width: 1200px;
+        font-family: "Rubik", sans-serif;
+    }
+    
+    .background-style {
+        width: 100%;
+        height: 800px;
+        position: absolute;
+        z-index: -1;
+        overflow: hidden;
+    }
+    
+    .vertical {
+        height: 43.75rem;
+        width: 32.5rem;
+    }
+    
+    .left {
+        background-color: black;
+        border-radius: 0 0 300px 300px;
+        float: left;
+        margin-left: -100px;
+        background-image: linear-gradient(to top right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    }
+    
+    .right {
+        background-color: rgb(75, 11, 11);
+        border-radius: 300px 300px 0 0;
+        float: right;
+        margin-top: 100px;
+        margin-right: -400px;
+        background-image: linear-gradient(to bottom right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+        opacity: 0.04;
+    }
+    
+    .hero {
+        clear: both;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        height: 800px;
+        margin-left: 5%;
+    }
+    
+    .app-ui {
+        background-color: white;
+        height: 480px;
+        width: 230px;
+        border-radius: 30px;
+        font-size: 8px;
+        padding: 10px;
+        margin: 100px;
+        box-shadow: 10px 10px 45px -20px hsl(270, 10%, 53%), 20px 20px 60px -40px hsl(206, 6%, 79%);
+    }
+    
+    .ui-contents {
+        background-color: hsl(270, 20%, 96%);
+        height: 480px;
+        width: 230px;
+        border-radius: 23px;
+    }
+    
+    .profile {
+        background-color: black;
+        height: 70px;
+        width: 230px;
+        border-radius: 23px 23px 6px 6px;
+        background-image: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+        box-shadow: 0 4px 8px -4px hsl(205, 6%, 62%);
+    }
+    
+    .island {
+        background-color: white;
+        height: 20px;
+        width: 130px;
+        margin-left: 50px;
+        border-radius: 0 0 14px 14px;
+    }
+    
+    .profile-contents {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        gap: 10px;
+        margin: 10px;
+    }
+    
+    .avatar {
+        border: 0.8px white solid;
+        border-radius: 20px;
+        margin-left: -5px;
+    }
+    
+    .profile-name {
+        line-height: 4px;
+        flex-basis: 120px;
+    }
+    
+    .profile-name h2 {
+        font-size: 11px;
+        font-weight: 500;
+        color: white;
+    }
+    
+    .profile-name p {
+        font-weight: 300;
+        color: hsl(276, 100%, 81%);
+    }
+    
+    .r-message {
+        background-color: hsl(275, 60%, 92%);
+        width: 110px;
+        padding: 7px 7.5px;
+        margin: 7.5px;
+        color: hsl(276, 55%, 52%);
+        border-radius: 10px 10px 10px 5px;
+        line-height: 12px;
+        clear: both;
+    }
+    
+    .dog-images {
+        margin-right: 3px;
+    }
+    
+    .s-image{
+        height: 40px;
+        border-radius: 8px;
+        margin: 0 4px;
+        float: right;
+    }
+    
+    .s-message {
+        background-color: white;
+        padding: 7.5px;
+        margin: 7.5px;
+        color: hsl(271, 15%, 43%);
+        border-radius: 10px 10px 5px 10px;
+        float: right;
+        box-shadow: 0 5px 8px -4px hsl(205, 6%, 62%);
+    }
+    
+    .one {
+        width: 110px;
+        margin-bottom: 0;
+    }
+    
+    .pricing-box {
+        background-image: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+        width: 150px;
+        padding: 3px 10px;
+        margin: 7.5px;
+        color: white;
+        border-radius: 10px 10px 10px 5px;
+        line-height: 12px;
+        clear: both;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: left;
+    }
+    
+    .radio {
+        height: 10px;
+        width: 10px;
+        border: 0.25px hsl(289, 100%, 72%) solid;
+        border-radius: 100%;
+    }
+    
+    .pricing-box p {
+        color: aliceblue;
+        flex-basis: 85px;
+        font-weight: 300;
+        line-height: 10px;
+    }
+    
+    .price {
+        font-size: 12px;
+        font-weight: 500;
+    }
+    
+    .chat-box {
+        background-color: white;
+        width: 210px;
+        height: 35px;
+        margin: 18px 10px 0 10px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        border-radius: 20px;
+    }
+    
+    .chat-box p {
+        margin-left: 15px;
+        flex-basis: 165px;
+        font-weight: 400;
+        font-size: 9px;
+        color: hsl(206, 6%, 79%);
+    }
+    
+    .text {
+        max-width: 350px;
+        flex: 1;
+    }
+    
+    .text h1 {
+        font-size: 40px;
+        font-weight: 600;
+        color: hsl(271, 36%, 24%);
+    }
+    
+    .text p {
+        color: hsl(206, 6%, 79%);
+    }
+    
+    .attribution { 
+        font-size: 11px; 
+        text-align: center; 
+        clear: both;
+    }
+    
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+    }
+}
